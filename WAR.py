@@ -61,10 +61,4 @@ with open("war.html", "w") as f:
     print("<br><img src=\"cropped.jpg\"><br><br>", file=f)
     f.close()
 
-
-# my_df = pd.DataFrame(calcTableBody_red)
-# my_df.to_csv('output.csv', index=False, header=calcTableHeader)
-
-#NEED TO SAVE THIS COMPONENT TO COMBINE
-
 next_week_planned.next_week_planned()

@@ -36,7 +36,7 @@ def findOutlook():
             keyboard.press_and_release("alt + down")
 
 def next_week_planned():
-    findOutlook()
+    global top_hwnd
     try:
         hwnd = win32gui.FindWindow(None, top_hwnd)
         # Change the line below depending on whether you want the whole window

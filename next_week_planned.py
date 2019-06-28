@@ -34,8 +34,6 @@ def findOutlook():
             keyboard.press_and_release("ctrl + alt + 2")
             keyboard.press_and_release("alt + h, o + d")
             keyboard.press_and_release("alt + down")
-            keyboard.press_and_release("alt + h, o + d")
-            keyboard.press_and_release("ctrl + 1")
 
 def next_week_planned():
     findOutlook()

@@ -69,4 +69,7 @@ with open("war.html", "w") as f:
     print("<br><img src=\"cropped.jpg\"><br><br>", file=f)
     f.close()
 
+next_week_planned.findOutlook()
+time.sleep(5)
 next_week_planned.next_week_planned()
+

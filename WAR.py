@@ -20,11 +20,13 @@ calcTableHeader = ['Date', 'Organizer', 'Subject']
 calcTableBody_red = []
 calcTableBody_yellow = []
 calcTableBody_misc = []
+calcTableBody_canceled = []
 
 for appointmentItem in restrictedItems:
     red = []
     yellow = []
     misc = []
+    canceled = []
     if "Canceled" not in appointmentItem.Subject:
         if appointmentItem.Categories == "Red Category":
             red.append(appointmentItem.Start.strftime("%m/%d"))
@@ -44,6 +46,12 @@ for appointmentItem in restrictedItems:
                 misc.append("N/A")
             misc.append(appointmentItem.Subject)
             calcTableBody_misc.append(misc)
+    else:
+        canceled.append(appointmentItem.Start.strftime("%m/%d"))
+        canceled.append(appointmentItem.Organizer)
+        canceled.append(appointmentItem.Subject)
+        calcTableBody_canceled.append(canceled)
+
 #struct: [['date', 'organizer', 'subject'], [#2]]
 
 war_end = end - timedelta(days=1)

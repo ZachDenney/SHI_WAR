@@ -65,6 +65,8 @@ with open("war.html", "w") as f:
     print(tabulate(calcTableBody_yellow, headers=calcTableHeader, tablefmt="html"), file=f)
     print("<br><strong>Misc. Meetings:</strong><br><br>", file =f)
     print(tabulate(calcTableBody_misc, headers=calcTableHeader, tablefmt="html"), file=f)
+    print(f"<br><strong>Canceled Meetings ({len(calcTableBody_canceled)}):</strong><br><br>", file =f)
+    print(tabulate(calcTableBody_canceled, headers=calcTableHeader, tablefmt="html"), file=f)
     print("<br><strong>Next Week Planned:</strong><br><br>", file=f)
     print("<br><img src=\"cropped.jpg\"><br><br>", file=f)
     f.close()

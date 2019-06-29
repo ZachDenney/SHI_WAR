@@ -1,7 +1,7 @@
 # SHI_WAR
 Automate WAR process.
 
-WAR.py == main method
+WAR.py == main method. uses win api to grab outlook calendar for current week, and dump data by category. effectivley i have harded a 1:1 linking between category type, and calendar classification... so, setting up category types is required. ex: red = onsite(customer), blue = misc meetings, etc. 
 
 next_week_planned == grab outlook window, bring front, send keypress to find calendar, snapshot and crop calendar image for main war report.
 

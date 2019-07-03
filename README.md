@@ -15,24 +15,20 @@ Additional work intended:
 5. timedelta still a bit sensitive to +/- 1 day (timestamp related). work on this variable calculation.
 6. breakout customer name. should be able to take appointment and seperate by ":" (ex: subject line = company: topic of meeting), and add to own category.
 
-Calendar Category Mapping:
+Calendar Color/Category Mapping
+Red --> In Situ
+ Red = External In Situ
+ Maroon = Internal In Situ
 
- Calendar Color/Category Mapping
- Red --> In Situ
- 	Red = External In Situ
- 	Maroon = Internal In Situ
+Yellow --> Virtual
+ Yellow = Virtual
 
- Yellow --> Virtual
- 	Yellow = Virtual
-
- Misc --> Misc
- 	Blue = Optional Misc
- 	Green = Optional Relationship Building
- 	Orange = Priority-Business
-
-
- Don't show:
-
+Misc --> Misc
+ Blue = Optional Misc
+ Green = Optional Relationship Building
+ Orange = Priority-Business
+ 
+Don't show:
  Purple = Padding
  Green = Incentive
  Green = Holiday

@@ -17,24 +17,24 @@ Additional work intended:
 
 Calendar Category Mapping:
 
-# Calendar Color/Category Mapping
-# Red --> In Situ
-# 	Red = External In Situ
-# 	Maroon = Internal In Situ
-#
-# Yellow --> Virtual
-# 	Yellow = Virtual
-#
-# Misc --> Misc
-# 	Blue = Optional Misc
-# 	Green = Optional Relationship Building
-# 	Orange = Priority-Business
-#
-#
-# Don't show:
-#
-# Purple = Padding
-# Green = Incentive
-# Green = Holiday
-# Orange = Priority-Personal
-# Dark Blue = Tracking
+ Calendar Color/Category Mapping
+ Red --> In Situ
+ 	Red = External In Situ
+ 	Maroon = Internal In Situ
+
+ Yellow --> Virtual
+ 	Yellow = Virtual
+
+ Misc --> Misc
+ 	Blue = Optional Misc
+ 	Green = Optional Relationship Building
+ 	Orange = Priority-Business
+
+
+ Don't show:
+
+ Purple = Padding
+ Green = Incentive
+ Green = Holiday
+ Orange = Priority-Personal
+ Dark Blue = Tracking

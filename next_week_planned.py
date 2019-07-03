@@ -4,6 +4,7 @@ from ctypes import windll
 from PIL import Image
 import os
 import keyboard
+import time
 
 top_hwnd = None
 
@@ -25,14 +26,19 @@ def findOutlook():
     win32gui.EnumWindows(callback, win_list)  # populate list
 
     for window in win_list:  # print results
+        time.sleep(.1)
         if "Outlook" in window:
             windowPos = win_list.index(window)
             #print(win_list.index(window))
             top_hwnd = win_list[windowPos][13:-1] #slice shit off
             bringtofront(top_hwnd)
+            time.sleep(.1)
             keyboard.press_and_release("ctrl + 2")
+            time.sleep(.1)
             keyboard.press_and_release("ctrl + alt + 2")
+            time.sleep(.1)
             keyboard.press_and_release("alt + h, o + d")
+            time.sleep(.1)
             keyboard.press_and_release("alt + down")
 
 def next_week_planned():

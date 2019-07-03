@@ -3,6 +3,7 @@ from tabulate import tabulate
 from datetime import datetime, timedelta
 import next_week_planned
 import time
+import winsound
 
 outlook = win32com.client.Dispatch("Outlook.Application").GetNamespace("MAPI")
 calendar = outlook.GetDefaultFolder(9)
@@ -16,7 +17,7 @@ if datetime.weekday(datetime.today()) != 4:
 else:
     fridayDelta = 1
 
-begin = datetime.today() - timedelta(days=fridayDelta-1)
+begin = datetime.today() - timedelta(days=fridayDelta+1)
 end = datetime.today() + timedelta(days=fridayDelta+1)
 
 print(f"Activities from: {begin}, to: {end}")
@@ -85,11 +86,12 @@ for appointmentItem in restrictedItems:
 
 #struct: [['date', 'organizer', 'subject'], [#2]]
 
+war_begin = begin + timedelta(days=1)
 war_end = end - timedelta(days=1)
 
 with open("war.html", "w") as f:
     print("<strong>Weekly Report –  Zach Denney</strong><br>", file=f)
-    print("<strong>Dates: {}-{}</strong><br>".format(begin.strftime("%m/%d"), war_end.strftime("%m/%d")), file=f)
+    print("<strong>Dates: {}-{}</strong><br>".format(war_begin.strftime("%m/%d"), war_end.strftime("%m/%d")), file=f)
     print(f"<br><strong>On-Site Meetings ({len(calcTableBody_InSitu)}):</strong><br><br>", file=f)
     print(tabulate(calcTableBody_InSitu, headers=calcTableHeader, tablefmt="html"), file=f) #tablefmt="fancy_grid"
     print(f"<br><strong>Virtual Meetings ({len(calcTableBody_Virtual)}):</strong> <br><br>", file=f)
@@ -103,5 +105,8 @@ with open("war.html", "w") as f:
     f.close()
 
 next_week_planned.findOutlook()
-time.sleep(5)
+time.sleep(.1)
 next_week_planned.next_week_planned()
+frequency = 2500  # Set Frequency To 2500 Hertz
+duration = 500  # Set Duration To 1000 ms == 1 second
+winsound.Beep(frequency, duration)

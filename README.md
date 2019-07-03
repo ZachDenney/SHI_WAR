@@ -16,6 +16,7 @@ Additional work intended:
 6. breakout customer name. should be able to take appointment and seperate by ":" (ex: subject line = company: topic of meeting), and add to own category.
 
 Calendar Color/Category Mapping
+
 Red --> In Situ
  Red = External In Situ
  Maroon = Internal In Situ

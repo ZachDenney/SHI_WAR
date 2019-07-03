@@ -32,13 +32,13 @@ def findOutlook():
             #print(win_list.index(window))
             top_hwnd = win_list[windowPos][13:-1] #slice shit off
             bringtofront(top_hwnd)
-            time.sleep(.1)
+            time.sleep(1)
             keyboard.press_and_release("ctrl + 2")
-            time.sleep(.1)
+            time.sleep(1)
             keyboard.press_and_release("ctrl + alt + 2")
-            time.sleep(.1)
+            time.sleep(1)
             keyboard.press_and_release("alt + h, o + d")
-            time.sleep(.1)
+            time.sleep(1)
             keyboard.press_and_release("alt + down")
 
 def next_week_planned():

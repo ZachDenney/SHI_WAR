@@ -32,7 +32,7 @@ def findOutlook():
             #print(win_list.index(window))
             top_hwnd = win_list[windowPos][13:-1] #slice shit off
             bringtofront(top_hwnd)
-            time.sleep(1)
+            time.sleep(3)
             keyboard.press_and_release("ctrl + 2")
             time.sleep(1)
             keyboard.press_and_release("ctrl + alt + 2")
@@ -80,7 +80,6 @@ def next_week_planned():
         win32gui.ReleaseDC(hwnd, hwndDC)
 
         if result == 1:
-            #PrintWindow Succeeded
             im.save("./test.jpg")
             imageobject = Image.open("./test.jpg")
             cropped = imageobject.crop((245,170,1920,730))

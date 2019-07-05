@@ -17,9 +17,9 @@ Additional work intended:
 
 Calendar Color/Category Mapping (change these in outlook to link to category breakout in WAR.py)
 
--Red --> In Situ   
-   -Red = External In Situ  
-   -Maroon = Internal In Situ  
+*Red --> In Situ   
+   *Red = External In Situ  
+   *Maroon = Internal In Situ  
 -Yellow --> Virtual  
     -Yellow = Virtual  
 -Misc --> Misc  

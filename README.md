@@ -17,21 +17,20 @@ Additional work intended:
 
 Calendar Color/Category Mapping (change these in outlook to link to category breakout in WAR.py)
 
-Red --> In Situ  
-    
-   +Red = External In Situ  
-   +Maroon = Internal In Situ  
-Yellow --> Virtual  
-    +Yellow = Virtual  
-Misc --> Misc  
-    +Blue = Optional Misc  
-    +Green = Optional Relationship Building  
-    +Orange = Priority Business  
-Don't Present:  
-    +Purple = Padding  
-    +Green = Incentive  
-    +Green = Holiday  
-    +Orange = Priority Personal  
-    +Dark Blue = Tracking  
+-Red --> In Situ   
+   -Red = External In Situ  
+   -Maroon = Internal In Situ  
+-Yellow --> Virtual  
+    -Yellow = Virtual  
+-Misc --> Misc  
+    -Blue = Optional Misc  
+    -Green = Optional Relationship Building  
+    -Orange = Priority Business  
+-Don't Present:  
+    -Purple = Padding  
+    -Green = Incentive  
+    -Green = Holiday  
+    -Orange = Priority Personal  
+    -Dark Blue = Tracking  
   
 
